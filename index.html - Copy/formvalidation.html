@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>form</title>
+   
+</head>
+<body>
+    <form onsubmit="return data()" action="thankyou.html">
+        <div class="dd">
+    userid:   <input type="text" id="n1"><br>
+    contact : <input type="number" id="n2"><br>
+    password:    <input type="password" id="n3"><br>
+    conform pass: <input type="password" id="n4"><br>
+    <input type="submit" value="submit"></div>
+    </form>
+    <script>
+        function data(){
+        let a=document.getElementById("n1").value;
+        let b=document.getElementById("n2").value;
+        let c=document.getElementById("n3").value;
+        let d=document.getElementById("n4").value;
+        if(a==""||b==""||c==""||d==""){
+            alert("all field are mandotry");
+        return false;
+        }
+        else if(b.length>10||b.length<10)
+            {
+                alert("number should be of ten digits please enter valid num");
+                return false;
+            }
+            else if(n3!=n4)
+            {   
+                   alert("your password is different"); 
+                return false;
+            }
+            else{
+                return 1;
+            }
+    
+        }
+    
+    </script>
+</body>
+
+</html>

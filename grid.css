@@ -1,0 +1,32 @@
+.child{
+    
+    display:flex;
+    height: 100px;
+    width: 100px;
+    background-color :aqua;
+    border: 2px solid black;
+    color: black;
+    
+}
+.parent{
+    display:flex;
+    height: 200px;
+    width: 200px;
+    background-color:yellow;
+    border:3px solid black;
+    
+}
+.hii{
+    transition: 2s ease-out;
+}
+.hii:hover{
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: rgb(206, 199, 199) 7px 8px 19px;
+}
+.drop-shadow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(8px 8px 4px rgb(231, 40, 72));
+}

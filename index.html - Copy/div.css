@@ -1,0 +1,21 @@
+/* .box{
+    margin: 5px;
+    height:  100px;
+    width: 100px;
+    border: solid 3px rgb(0, 0, 0) ;
+}
+.space{
+    display:flex  ;
+} */
+div{
+    display: flex;
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border: 1px solid black;
+    color: white;
+    justify-content: center;
+    justify-items: center;
+    padding-top: 50px;
+
+}
