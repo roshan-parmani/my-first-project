@@ -3,26 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>G-20 Event</title> 
+    <title>G-20 Competition</title> 
+    <style>
+        /* Resetting default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Body styling */
+        body {
+            background-color: whitesmoke;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        /* Header styling */
+        .header {
+            background-color: navy;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        /* Container for the entire content */
+        .container {
+            background-color: skyblue;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            animation: slideUp 1s ease-in-out;
+        }
+
+        /* Heading styling */
+        h2 {
+            font-size: 1.5rem;
+            margin-top: 20px;
+            color: #22438c;
+        }
+
+        /* Video styling */
+        .vid {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 600px;
+            border: 3.5px solid black;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .vid:hover {
+            transform: scale(1.05);
+        }
+
+        /* List styling */
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            font-size: 1.2rem;
+            color: #333;
+            margin-top: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        /* Certificate image styling */
+        .certificate-img {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .certificate-img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Footer styling */
+        .footer {
+            background-color: navy;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            font-size: 0.9rem;
+            margin-top: 20px;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        /* Responsive styling */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.5rem;
+            }
+            h2 {
+                font-size: 1.2rem;
+            }
+            ul {
+                font-size: 1rem;
+            }
+        }
+    </style>
 </head>
-<div style="background-color: skyblue;">
-<body >
-    <center><h1>G-20 Compitition IN SS JAIN SUBODH PG(AUTONOMOUS) COLLEGE </h1>
-        <ul style="font-size: 30px;">
-            <li>this is the best speech of our compitition .....</li>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <h1>G-20 Competition in SS Jain Subodh PG (Autonomous) College</h1>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        
+        <h2>Highlighted Speech</h2>
+        <ul>
+            <li>This is the best speech of our competition...</li>
         </ul>
-   <video class="vid"  width="600px" controls style="border: 3.5px solid black;"">
-        <source src="videos/g20.mp4" type="video/mp4">
-    </video>
-</center>
-    <h2>some points for G-20 Compitition</h2>
-    <ul style="font-size: 30px;">
-<li> all participant have same topic G-20 </li><br>
-<li> in this all student give presentation . </li><br>
-<li>  all participant give speech on stage as shown in slides  .</li><br>
-<br><br>
-<h1> we also provide certification to all participant</h1>
- <center><img src="imges/extempore.jpg"  alt=" certificate"></center>
-    </ul></div>
+
+        <!-- Video Section -->
+        <video class="vid" controls>
+            <source src="videos/g20.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Points for Competition -->
+        <h2>Some Points for the G-20 Competition</h2>
+        <ul>
+            <li>All participants have the same topic: G-20.</li>
+            <li>Each student presents a prepared presentation.</li>
+            <li>All participants give their speeches on stage as shown in the slides.</li>
+        </ul>
+
+        <!-- Certification Section -->
+        <h2>Certification for All Participants</h2>
+        <img src="imges/extempore.jpg" alt="Certificate" class="certificate-img">
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        &copy; 2023 SS Jain Subodh PG (Autonomous) College - All Rights Reserved
+    </footer>
+
 </body> 
 </html>
