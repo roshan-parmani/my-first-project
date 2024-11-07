@@ -3,28 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Extempore</title> 
+    <title>Extempore Competition</title> 
+    <style>
+        /* Resetting default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Body styling */
+        body {
+            background-color: whitesmoke;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        /* Header styling */
+        .header {
+            background-color: navy;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        /* Container for the entire content */
+        .container {
+            background-color: skyblue;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            animation: slideUp 1s ease-in-out;
+        }
+
+        /* Heading styling */
+        h2 {
+            font-size: 1.5rem;
+            margin-top: 20px;
+            color: #22438c;
+        }
+
+        /* Video styling */
+        .vid {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 600px;
+            border: 2px solid black;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .vid:hover {
+            transform: scale(1.05);
+        }
+
+        /* List styling */
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            font-size: 1.2rem;
+            color: #333;
+            margin-top: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        /* Certificate image styling */
+        .certificate-img {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .certificate-img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Footer styling */
+        .footer {
+            background-color: navy;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            font-size: 0.9rem;
+            margin-top: 20px;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        /* Responsive styling */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.5rem;
+            }
+            h2 {
+                font-size: 1.2rem;
+            }
+            ul {
+                font-size: 1rem;
+            }
+        }
+    </style>
 </head>
-<div style="background-color: skyblue;">
-<body >
-    <center><h1>Extempore Compitition IN SS JAIN SUBODH PG(AUTONOMOUS) COLLEGE </h1>
-        <ul style="font-size: 30px;">
-            <li>this is the best speech of our compitition .....</li>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <h1>Extempore Competition in SS Jain Subodh PG (Autonomous) College</h1>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        
+        <h2>Highlighted Speech</h2>
+        <ul>
+            <li>This is the best speech of our competition...</li>
         </ul>
-   <video class="vid"  width="600px" controls style="border: 2px solid black">
-        <source src="videos/extempore.mp4" type="video/mp4">
-    </video>
-</center>
-    <h2>some points for extempore Compitition</h2>
-    <ul style="font-size: 30px;">
-<li> all participant have different topic </li><br>
-<li> in theis we use <b> "pick a pick"</b> word  for this compition </li><br>
-<li>  we have different slides for stdents for speech .</li><br>
-<li> 1 participant have choose a slide on the spot on speech time </li><br>
-<li>give speech which is shown in picture</li>
-<br><br>
-<h1> we also provide certification to all participant</h1>
- <center><img src="imges/extempore.jpg"  alt=" certificate"></center>
-    </ul></div>
+
+        <!-- Video Section -->
+        <video class="vid" controls>
+            <source src="videos/extempore.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Points for Competition -->
+        <h2>Some Points for the Extempore Competition</h2>
+        <ul>
+            <li>All participants have different topics.</li>
+            <li>We use the <b>"pick a pick"</b> method for this competition.</li>
+            <li>Different slides are provided for students' speeches.</li>
+            <li>Each participant chooses a slide on the spot at the time of their speech.</li>
+            <li>Give a speech based on the topic shown in the picture.</li>
+        </ul>
+
+        <!-- Certification Section -->
+        <h2>Certification for All Participants</h2>
+        <img src="imges/extempore.jpg" alt="Certificate" class="certificate-img">
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        &copy; 2023 SS Jain Subodh PG (Autonomous) College - All Rights Reserved
+    </footer>
+
 </body> 
 </html>
